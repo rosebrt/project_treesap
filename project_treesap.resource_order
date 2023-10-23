@@ -17,9 +17,10 @@
   ],
   "ResourceOrderSettings": [
     {"name":"Obj_NPC","order":1,"path":"objects/Obj_NPC/Obj_NPC.yy",},
+    {"name":"Obj_OWInteractable","order":4,"path":"objects/Obj_OWInteractable/Obj_OWInteractable.yy",},
     {"name":"Obj_DevMenu","order":2,"path":"objects/Obj_DevMenu/Obj_DevMenu.yy",},
     {"name":"Scr_Data","order":1,"path":"scripts/Scr_Data/Scr_Data.yy",},
-    {"name":"Spr_NPC","order":3,"path":"sprites/Spr_NPC/Spr_NPC.yy",},
+    {"name":"Spr_OWPlayer","order":3,"path":"sprites/Spr_OWPlayer/Spr_OWPlayer.yy",},
     {"name":"Dev_Menu","order":3,"path":"rooms/Dev_Menu/Dev_Menu.yy",},
     {"name":"Spr_Signpost","order":1,"path":"sprites/Spr_Signpost/Spr_Signpost.yy",},
     {"name":"Obj_GameController","order":1,"path":"objects/Obj_GameController/Obj_GameController.yy",},

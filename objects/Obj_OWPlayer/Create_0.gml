@@ -1,4 +1,5 @@
 /// @description Initialize Player
+event_inherited();
 
 //INPUTS
 key_up =		keyboard_check(ord("W"));

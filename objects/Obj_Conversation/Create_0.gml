@@ -1,14 +1,9 @@
-/// @description Setup Conversation Customizables
+// drawing
+camera = global.camera;
+player = instance_nearest(0,0,Obj_OWPlayer);
+started = false;
 
-current_line = new line("Test Speaker", "This is a test", noone);
-ending_action = function() {}; //called at the end of the conversation
+// basics
 
-function add_lines(_speaker, _color, _text, _responses) {
-	
-	//TODO - delimit _text by some escape character and create a number of lines, returning the first one.
-	
-	if(string_length(_text) > 256)
-		show_error("Error: String too long - [" + string_copy(_text,1,10) + "]", true);
-	
-	return new line(_speaker, _color, _text, _responses);
-}
+
+// functions

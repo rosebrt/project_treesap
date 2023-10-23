@@ -12,7 +12,10 @@
     "name": "Overworld",
     "path": "folders/Objects/Overworld.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "Obj_OWInteractable",
+    "path": "objects/Obj_OWInteractable/Obj_OWInteractable.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

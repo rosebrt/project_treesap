@@ -11,7 +11,10 @@
     "name": "Overworld",
     "path": "folders/Objects/Overworld.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "Obj_OWInteractable",
+    "path": "objects/Obj_OWInteractable/Obj_OWInteractable.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -28,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Spr_NPC",
-    "path": "sprites/Spr_NPC/Spr_NPC.yy",
+    "name": "Spr_OWNPC",
+    "path": "sprites/Spr_OWNPC/Spr_OWNPC.yy",
   },
   "spriteMaskId": null,
   "visible": true,
