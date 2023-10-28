@@ -1,1 +1,0 @@
-global.gamestate = gamestates.overworld;

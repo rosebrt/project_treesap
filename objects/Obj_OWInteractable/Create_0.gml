@@ -1,4 +1,4 @@
 color = wc.blue;
-name = "Default"
+name = "Default";
 
 interact = function() { }

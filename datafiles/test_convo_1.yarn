@@ -1,0 +1,39 @@
+title: Start
+---
+Guy[Blue]: This is a super basic test.
+Guy[Blue]: Here are some options:
+-> Test non-selectable options. (Red)
+    Guy[Red]: There should be three possible options on this screen.
+	-> Bad <<if true==false>>
+		Guy[Red]: ohno
+	-> If you can
+	-> Bad <<if true==false>>
+		Guy[Red]: ohno
+	-> Bad <<if true==false>>
+		Guy[Red]: ohno
+	-> Bad <<if true==false>>
+		Guy[Red]: ohno
+	-> see more than three
+	-> that is bad
+	-> Bad <<if true==false>>
+		Guy[Red]: ohno
+-> Test long text and jumping nodes. (Green)
+    <<jump Secondary>>
+-> Test text effects and pauses. (Yellow)
+    Guy[Yellow]: This one's not set up yet.
+    Guy[Yellow]: Come back later.
+-> Test metadata and functions. (Orange) <<if true==true>>
+    Guy[Orange]: This one's not set up yet.
+    Guy[Orange]: Come back later.
+
+===
+title: Secondary
+---
+Guy[Green]: This is a new node! The next section will be super long text.
+Guy[Green]: This section is super long to test out maximum speech bubble length. The maximum should be about 250 characters. The end of that sentance was about halfway to that length, and now we're at 200 so we're almost there. Ok and there we go.
+Guy[Green]: Also worth noting that the maximum response length is only about 50 characters.
+	-> Oh snap that's not a lot of text space!
+		Guy[Green]: Ye I know dawg :(
+	-> Test jumping back to first section.
+		<<jump Start>>
+===

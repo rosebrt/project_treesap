@@ -20,12 +20,12 @@ enum ct {
 	dark = 1,
 }
 
-function color_init() {
+function init_color() {
 
 	global.colors = ds_grid_create(10,2);
 	
-	global.colors[# wc.red, ct.light] = #7d0723;
-	global.colors[# wc.red, ct.dark] = #d50f0f;
+	global.colors[# wc.red, ct.light] = #d50f0f;
+	global.colors[# wc.red, ct.dark] = #7d0723;
 	global.colors[# wc.orange, ct.light] = #f66822;
 	global.colors[# wc.orange, ct.dark] = #922e0b;
 	global.colors[# wc.yellow, ct.light] = #fbe846;
