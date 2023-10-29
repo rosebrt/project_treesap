@@ -1,0 +1,25 @@
+title: Start
+---
+Righty[Blue]: Hey, have you read the sign?
+-> No? <<if not get_quest_data("READ_TEST_SIGN") >>
+	Righty[Blue]: Really? You've been in town for three days now and haven't read the sign?
+	-> How do you know how long I've been in town?
+			Righty[Blue]: You really should see it. It's like our main attraction.
+			-> ...you didn't answer my question
+				Righty[Blue]: I know you big-city folk probably have much cooler stuff in your fancy museums or whatever. But out here we cherish the little things in life. Things that may not come with a big price tag, but are rich in character.
+				Righty[Blue]: You wouldn't understand...
+				-> I'm gonna go.
+					Righty[Blue]: Yeah come back when you've seen the sign.
+			
+-> Just read it. It says "I'm a sign". <<if get_quest_data("READ_TEST_SIGN") >>
+	Righty[Blue]: I know right??
+	Righty[Blue]: It's the best thing I've ever seen!
+	-> The pointless self-descriptive sign is?
+		Righty[Blue]: Ugh. You just don't appreciate high art.
+		
+-> Why do you care?
+	Righty[Blue]: Because I'm the mayor!
+	Righty[Blue]: That's not true, I'm just trying to impress you.
+	Righty[Blue]: Did it work?
+
+===

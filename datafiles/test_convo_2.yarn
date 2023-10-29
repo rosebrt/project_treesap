@@ -1,4 +1,5 @@
 title: Start
 ---
 I'm a sign. Thanks for reading me, probably.
+<<set_quest_data("READ_TEST_SIGN",true) >>
 ===

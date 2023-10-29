@@ -7,21 +7,7 @@ var num_options = ChatterboxGetOptionCount(chatterbox);
 
 // SELECT -----------------------------------------
 // Cycle through the valid options and push the pointer that direction
-if key_dir > 0 {
-	for( var i = option_index + 1; i < num_options; i++ ) {
-		if( ChatterboxGetOptionConditionBool(chatterbox, i) ) {
-			option_index = i;
-			break;
-		}
-	}
-} else if key_dir < 0 {
-	for( var i = option_index - 1; i >= 0; i-- ) {
-		if( ChatterboxGetOptionConditionBool(chatterbox, i) ) {
-			option_index = i;
-			break;
-		}
-	}
-}
+select_next_option(key_dir,1);
 
 // If a select button was pressed, advance accordingly
 if (select_button) {

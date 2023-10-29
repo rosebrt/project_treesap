@@ -1,8 +1,10 @@
 if (IsChatterbox(chatterbox) and text != undefined) {
 
-	var num_options = ChatterboxGetOptionCount(chatterbox);
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_top);
+	draw_set_font(Fnt_Small);
+	
+	var num_options = ChatterboxGetOptionCount(chatterbox);
 	var _text_w = camera.view_size_w - (2*H_PAD) - (2*H_MARGIN);
 	var _text_h = string_height_ext(text,LINE_HEIGHT,_text_w);
 	var _name_w = string_width(speaker);
@@ -22,16 +24,14 @@ if (IsChatterbox(chatterbox) and text != undefined) {
 		draw_sprite_stretched(Spr_UIBox,0,_x1,_y1,_x2-_x1,_y2-_y1);
 	
 		// DRAW TEXT
-		
-		draw_set_font(Fnt_Small);
 		if( speaker != "" ) {
 			//black nameplate background
-			draw_sprite_stretched_ext(Spr_UIBox,1,_x1+9,_y1-6,_name_w+7,11,c_black,1); 
+			draw_sprite_stretched_ext(Spr_UIBox,1,_x1+9,_y1-7,_name_w+(2*NAME_H_PAD)+2,11,c_black,1); 
 			//color nameplate
-			draw_sprite_stretched_ext(Spr_UIBox,1,_x1+10,_y1-5,_name_w+5,9,_light_color,1); 
+			draw_sprite_stretched_ext(Spr_UIBox,1,_x1+10,_y1-6,_name_w+(2*NAME_H_PAD),9,_light_color,1); 
 			//nameplate
 			draw_set_color(c_black);
-			draw_text(_x1+13,_y1-4,string_upper(speaker));
+			draw_text(_x1+10+NAME_H_PAD,_y1-5,string_upper(speaker));
 		}
 		//main text
 		draw_set_color(c_white);
@@ -86,12 +86,12 @@ if (IsChatterbox(chatterbox) and text != undefined) {
 		draw_set_font(Fnt_Small);
 		if( speaker != "" ) {
 			//black nameplate background
-			draw_sprite_stretched_ext(Spr_UIBox,1,_x1+9,_y1-6,_name_w+7,11,c_black,1); 
+			draw_sprite_stretched_ext(Spr_UIBox,1,_x1+9,_y1-7,_name_w+(2*NAME_H_PAD)+2,11,c_black,1); 
 			//color nameplate
-			draw_sprite_stretched_ext(Spr_UIBox,1,_x1+10,_y1-5,_name_w+5,9,_light_color,1); 
+			draw_sprite_stretched_ext(Spr_UIBox,1,_x1+10,_y1-6,_name_w+(2*NAME_H_PAD),9,_light_color,1); 
 			//nameplate
 			draw_set_color(c_black);
-			draw_text(_x1+13,_y1-4,string_upper(speaker));
+			draw_text(_x1+10+NAME_H_PAD,_y1-5,string_upper(speaker));
 		}
 		//main text
 		draw_set_color(c_white);

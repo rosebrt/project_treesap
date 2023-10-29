@@ -18,6 +18,8 @@ function init_chatterbox() {
 	ChatterboxLoadFromFile("default.yarn");
 	
 	// Add Chatterbox Functions
+	ChatterboxAddFunction("get_quest_data",get_quest_data);
+	ChatterboxAddFunction("set_quest_data",set_quest_data);
 	
 }
 
@@ -29,6 +31,7 @@ function start_conversation(_yarn_file) {
 	convo.chatterbox = c;
 	ChatterboxJump(convo.chatterbox, "Start", _yarn_file);
 	convo.chatterbox_update();
+	convo.select_next_option(1,0);
 	global.gamestate = gamestates.cutscene;
 	
 }

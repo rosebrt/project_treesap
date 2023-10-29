@@ -31,11 +31,24 @@ function advance(_option) {
 	text_display_length = 0;
 	text_display_speed = 0.5;
 	
+	select_next_option(1,0);
+}
+
+function select_next_option(_dir,_offset) {
 	var num_options = ChatterboxGetOptionCount(chatterbox);
-	for( var i = option_index; i < num_options; i++ ) {
+	if _dir > 0 {
+	for( var i = option_index + _offset; i < num_options; i++ ) {
 		if( ChatterboxGetOptionConditionBool(chatterbox, i) ) {
 			option_index = i;
 			break;
+		}
+	}
+	} else if _dir < 0 {
+		for( var i = option_index - _offset; i >= 0; i-- ) {
+			if( ChatterboxGetOptionConditionBool(chatterbox, i) ) {
+				option_index = i;
+				break;
+			}
 		}
 	}
 }
@@ -45,3 +58,4 @@ H_MARGIN = 6;
 V_PAD = 6;
 H_PAD = 6;
 LINE_HEIGHT = 9;
+NAME_H_PAD = 4;
