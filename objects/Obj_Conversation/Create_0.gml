@@ -53,7 +53,7 @@ function select_next_option(_dir,_offset) {
 	}
 }
 
-V_MARGIN = 8;
+V_MARGIN = 10;
 H_MARGIN = 6;
 V_PAD = 6;
 H_PAD = 6;

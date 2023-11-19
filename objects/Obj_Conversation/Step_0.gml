@@ -31,4 +31,5 @@ if (text_display_length < string_length(text))
 if ChatterboxIsStopped(chatterbox) {
 	instance_destroy();
 	global.gamestate = gamestates.overworld;
+	global.camera.focus = Obj_OWPlayer;
 }

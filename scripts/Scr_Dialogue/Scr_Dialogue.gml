@@ -2,13 +2,23 @@
 function cutscene_pause(_time) {
 	//TODO
 }
-function cutscene_focus(_instance, _time) {
-	//TODO
+function cutscene_focus(_inst_name) {
+	var f = noone;
+	for( var i = 0; i < instance_number(Obj_OWEntity); i++ ) {
+		var o = instance_find(Obj_OWEntity, i);
+		if( o.name == _inst_name) {
+			f = o;
+			break;
+		}
+	}
+	
+	if (f != noone)
+		global.camera.focus = f;
 }
 function cutscene_shake(_time) {
 	//TODO
 }
-function cutscene_charwalk(_instance, _x, _y, _speed) {
+function cutscene_charwalk(_inst_name, _x, _y, _speed) {
 	//TODO
 }
 #endregion
@@ -20,6 +30,7 @@ function init_chatterbox() {
 	// Add Chatterbox Functions
 	ChatterboxAddFunction("get_quest_data",get_quest_data);
 	ChatterboxAddFunction("set_quest_data",set_quest_data);
+	ChatterboxAddFunction("focus",cutscene_focus);
 	
 }
 

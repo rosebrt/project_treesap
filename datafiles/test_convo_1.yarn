@@ -19,6 +19,36 @@ Guy[Blue]: Here are some options:
 		Guy[Red]: ohno
 -> Test long text and jumping nodes. (Green)
     <<jump Secondary>>
+-> Test cutscenes. (Orange)
+	Guy[Orange]: This one is like, part way done.
+	-> Focus the guy over there
+		Guy[Orange]: Sure thing, one sec.
+		<< focus("Righty") >>
+		Guy[Orange]: There he is. His name is "Righty" cause he's on the right.
+		-> Makes sense
+			Guy[Orange]: Sure does.
+		-> No, wait. He's on the left
+			Guy[Orange]: ...
+			Guy[Orange]: I'm pretty sure he judges it based on his own perspective, smart guy. Not from where you are standing.
+				-> ...
+	-> Focus the sign
+		Guy[Orange]: Sure thing, one sec.
+		<< focus("Test Sign") >>
+		Guy[Orange]: There it is. It's a sign.
+	-> Focus something that doesn't exist like "flarbus"
+		Guy[Orange]: Uh... okay then
+		<< focus("flarbus") >>
+		Guy[Orange]: ...
+		Guy[Orange]: Did anything happen?
+		Guy[Orange]: Hopefully not.
+	-> Shake the camera like an earthquake
+		Guy[Orange]: This is not set up yet, unfortunately
+			-> Dang.
+	-> Walk in a circle
+		Guy[Orange]: This is not set up yet, unfortunately
+			-> Dang.
+	-> Do a cool pose
+		Guy[Orange]: This one probs is not ever gonna be a thing, big guy
 -> Test text effects and pauses. (Yellow)
     Guy[Yellow]: This one's not set up yet.
     Guy[Yellow]: Come back later.
@@ -31,8 +61,8 @@ title: Secondary
 ---
 Guy[Green]: This is a new node! The next section will be super long text.
 Guy[Green]: This section is super long to test out maximum speech bubble length. The maximum should be about 250 characters. The end of that sentance was about halfway to that length, and now we're at 200 so we're almost there. Ok and there we go.
-Guy[Green]: Also worth noting that the maximum response length is only about 50 characters.
-	-> Oh snap that's not a lot of text space!
+Guy[Green]: Also worth noting that the maximum response length is only about 60 characters.
+	-> Oh snap that's not a lot of text space to answer with!
 		Guy[Green]: Ye I know dawg :(
 	-> Test jumping back to first section.
 		<<jump Start>>

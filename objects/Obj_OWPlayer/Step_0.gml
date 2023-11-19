@@ -38,7 +38,7 @@ if( interact && global.gamestate = gamestates.overworld ) {
 	// TODO interactions
 	// temp:
 	var _target = instance_nearest_notme(x,y,Obj_OWInteractable);
-	if (distance_to_object(_target) < 26) {
+	if (distance_to_object(_target) < interaction_distance) {
 		_target.interact();
 	}
 }

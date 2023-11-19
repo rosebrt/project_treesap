@@ -10,3 +10,6 @@ interact =		keyboard_check_pressed(ord("E"));
 
 //MOVEMENT
 max_speed = 2;
+
+//INTERACTION
+interaction_distance = 18;

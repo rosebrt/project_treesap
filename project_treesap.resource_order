@@ -25,6 +25,7 @@
     {"name":"Overworld","order":1,"path":"folders/Sprites/Overworld.yy",},
     {"name":"Details","order":4,"path":"folders/Sprites/Overworld/Details.yy",},
     {"name":"UI","order":2,"path":"folders/Sprites/UI.yy",},
+    {"name":"Triggers","order":5,"path":"folders/Objects/Overworld/Triggers.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"ChatterboxGetContentArray","order":2,"path":"scripts/ChatterboxGetContentArray/ChatterboxGetContentArray.yy",},
@@ -42,6 +43,7 @@
     {"name":"__ChatterboxClassNode","order":4,"path":"scripts/__ChatterboxClassNode/__ChatterboxClassNode.yy",},
     {"name":"ChatterboxSourceNodeExists","order":10,"path":"scripts/ChatterboxSourceNodeExists/ChatterboxSourceNodeExists.yy",},
     {"name":"ChatterboxGetContentCount","order":3,"path":"scripts/ChatterboxGetContentCount/ChatterboxGetContentCount.yy",},
+    {"name":"Obj_OWEntity","order":6,"path":"objects/Obj_OWEntity/Obj_OWEntity.yy",},
     {"name":"Scr_Util","order":2,"path":"scripts/Scr_Util/Scr_Util.yy",},
     {"name":"ChatterboxGetOptionChosen","order":2,"path":"scripts/ChatterboxGetOptionChosen/ChatterboxGetOptionChosen.yy",},
     {"name":"ChatterboxUnload","order":11,"path":"scripts/ChatterboxUnload/ChatterboxUnload.yy",},
@@ -80,6 +82,7 @@
     {"name":"Obj_OWPlayer","order":3,"path":"objects/Obj_OWPlayer/Obj_OWPlayer.yy",},
     {"name":"__ChatterboxMetadataStringIsLineHash","order":12,"path":"scripts/__ChatterboxMetadataStringIsLineHash/__ChatterboxMetadataStringIsLineHash.yy",},
     {"name":"ChatterboxHop","order":2,"path":"scripts/ChatterboxHop/ChatterboxHop.yy",},
+    {"name":"Spr_StoneBlockPile","order":1,"path":"sprites/Spr_StoneBlockPile/Spr_StoneBlockPile.yy",},
     {"name":"ChatterboxLoadFromFile","order":4,"path":"scripts/ChatterboxLoadFromFile/ChatterboxLoadFromFile.yy",},
     {"name":"ChatterboxSelect","order":7,"path":"scripts/ChatterboxSelect/ChatterboxSelect.yy",},
     {"name":"ChatterboxIsStopped","order":4,"path":"scripts/ChatterboxIsStopped/ChatterboxIsStopped.yy",},

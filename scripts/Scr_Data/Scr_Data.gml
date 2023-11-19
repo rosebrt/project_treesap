@@ -5,6 +5,12 @@ enum gamestates {
 	battle
 }
 
+enum triggertypes {
+	one_time,
+	repeated,
+	loading_zone
+}
+
 #region COLORS -----------------------------------------------------------
 
 enum wc {
