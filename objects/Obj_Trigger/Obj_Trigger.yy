@@ -27,7 +27,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "Spr_TriggerZone",
+    "path": "sprites/Spr_TriggerZone/Spr_TriggerZone.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

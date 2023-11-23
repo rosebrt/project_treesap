@@ -13,7 +13,7 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9ff5239b-17c1-4505-ac76-1c758fefedd9",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a0b259a8-1922-4729-8d13-54c341559b70",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6f4f30b3-eff3-4eec-89c4-4b739226905d","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 7,
+  "origin": 9,
   "parent": {
     "name": "Overworld",
     "path": "folders/Sprites/Overworld.yy",
@@ -54,13 +54,13 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9ff5239b-17c1-4505-ac76-1c758fefedd9","path":"sprites/Spr_Signpost/Spr_Signpost.yy",},},},"Disabled":false,"id":"7245c5ac-02d2-4ef4-b482-283f80cb31f5","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a0b259a8-1922-4729-8d13-54c341559b70","path":"sprites/Spr_Signpost/Spr_Signpost.yy",},},},"Disabled":false,"id":"1398bbf2-c326-456e-9fec-dd36868208e7","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
     "volume": 1.0,
     "xorigin": 12,
-    "yorigin": 24,
+    "yorigin": 23,
   },
   "swatchColours": [
     4278190335,

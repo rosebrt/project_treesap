@@ -12,44 +12,49 @@ key_pressed_right =		keyboard_check_pressed(ord("D"));
 
 interact =		keyboard_check_pressed(ord("E"));
 
-var x_input = key_right - key_left;
+var x_input = key_left - key_right;
 var y_input = key_down - key_up;
+
 
 #endregion
 
-#region COLLISION --------------------------------------------------
+#region GRID_MOVEMENT --------------------------------------------------
 
-var x_speed = max_speed * x_input;
-var y_speed = max_speed * y_input;
-var total_speed = point_distance(0,0,x_speed,y_speed);
-
-if(total_speed > max_speed) {
-	x_speed *= (max_speed/total_speed);
-	y_speed *= (max_speed/total_speed);
+if( global.gamestate = gamestates.overworld ) {
+	// If in animation, complete movement
+	if(is_moving()) {
+		move(grid_dir);
+	} else {
+		
+		// If input
+		if( x_input!=0 || y_input!=0) {
+			//get dir
+			if (x_input!=0)
+				grid_dir = x_input + 1;
+			else if(y_input!=0)
+				grid_dir = y_input + 2;
+				
+			//check object in that dir
+			if( !instance_facing(Obj_Wall) && !instance_facing(Obj_OWInteractable)) {
+				// TODO loading zones & triggers
+				set_move(grid_dir);
+			}
+		}
+	}
 }
-
-// TODO collisions
 
 #endregion
 
 #region INTERACTION  --------------------------------------------------
 
 if( interact && global.gamestate = gamestates.overworld ) {
-	// TODO interactions
-	// temp:
-	var _target = instance_nearest_notme(x,y,Obj_OWInteractable);
-	if (distance_to_object(_target) < interaction_distance) {
+	var _target = instance_facing(Obj_OWInteractable);
+	if (_target != noone) {
+		if( _target.object_index == Obj_NPC)
+			_target.image_index = (grid_dir + 2)%4;
+		
 		_target.interact();
 	}
-}
-
-#endregion
-
-#region FINAL MOVEMENT  --------------------------------------------------
-
-if( global.gamestate = gamestates.overworld ) {
-	x += x_speed;
-	y += y_speed;
 }
 
 #endregion
@@ -58,6 +63,7 @@ if( global.gamestate = gamestates.overworld ) {
 
 if( global.gamestate = gamestates.overworld || global.gamestate = gamestates.cutscene) {
 	//TODO animations
+	image_index = grid_dir;
 }
 
 #endregion

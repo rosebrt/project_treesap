@@ -1,3 +1,5 @@
+#macro GRID_SIZE 24
+
 enum gamestates {
 	overworld,
 	cutscene,
@@ -9,6 +11,13 @@ enum triggertypes {
 	one_time,
 	repeated,
 	loading_zone
+}
+
+enum dir {
+	right = 0,
+	up = 1,
+	left = 2,
+	down = 3
 }
 
 #region COLORS -----------------------------------------------------------

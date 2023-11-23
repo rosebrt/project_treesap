@@ -15,6 +15,11 @@ function wrap(_val, _min, _max) {
 	}else return _val;
 }
 
+function dir_to_angle(_dir) {
+	return _dir * 90;
+	
+}
+
 function get_color(_color,_type) {
 	return global.colors[# _color, _type];
 }
